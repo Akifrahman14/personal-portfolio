@@ -1,694 +1,574 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Akif Rahman </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content= "Personal Portfolio" />
-	<!-- <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" /> -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akif Rahman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Portfolio" />
 
-	<!-- 
-	//////////////////////////////////////////////////////
+    <!-- Social preview -->
+    <meta property="og:title" content="Akif Rahman | Investment Associate & Web Designer">
+    <meta property="og:description" content="Portfolio showcasing projects, skills, and experience in data analytics, marketing, and web development.">
+    <meta property="og:image" content="images/akif-profile.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+    <!-- Recommended extras -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-	//////////////////////////////////////////////////////
-	 -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap (assumes v3.x in your js/bootstrap.min.js) -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js" defer></script>
+    <![endif]-->
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Smooth scrolling + offset for fixed navbar */
+      html { scroll-behavior: smooth; }
+      body { padding-top: 70px; } /* prevent header from hiding under fixed navbar */
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+      /* Navbar visuals */
+      .navbar-custom {
+        transition: background-color 0.35s ease, box-shadow 0.35s ease, color 0.35s ease;
+        background-color: transparent;
+        border: none;
+      }
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-nav > li > a {
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: .2px;
+      }
+      .navbar-custom .navbar-nav > li > a:hover,
+      .navbar-custom .navbar-nav > li.active > a {
+        color: #00d4ff;
+        background: transparent;
+      }
+      .navbar-custom.scrolled {
+        background-color: #222;
+        box-shadow: 0 4px 12px rgba(0,0,0,.25);
+      }
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/akif\ linkedin.png);"></div>
-							<h1><span>Akif Rahman</span></h1>
-							<h3><span>Marketing Student | Secretary @ AMA </span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-google2"></i></a></li>
-									<!-- <li><a href="#"><i class="icon-facebook2"></i></a></li> -->
-									<li><a href="https://www.linkedin.com/in/akif-rahman14/" target = "_blank"><i class="icon-linkedin2"></i></a></li>
-									<!-- <li><a href="#"><i class="icon-dribbble2"></i></a></li> -->
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+      /* Profile image */
+      .profile-thumb {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-size: cover !important;
+        background-position: center !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        margin: 0 auto 20px;
+      }
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About <a>Me </a></h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block"> Akif Rahman </span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+1 347-748-4299</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block"> akifrahman14@gmail.com </span></li>
-						<li><span class="first-block">Address:</span><span class="second-block"> 92-10 97th Ave Ozone Park, NY 11416</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>I'm the Secretary for the American Marketing Association at Baruch College. 
-					   I enjoy video games, video editing, film and basketball. I currently attend Baruch College,
-					   City University of New York, pursuing a Bachelors of Business Administration degree in 
-					   Marketing Advertising. My goal is to work in the marketing field whether it's in Analytics, Advertising
-					   or Digital Marketing. I am excited and can't wait to showcase my Marketing journey!!</p>
-					<!-- <p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-						</ul>
-					</p> -->
-				</div>
-			</div>
-		</div>
-	</div>
+      /* Leadership / blog thumbnails - uniform sizing */
+      .fh5co-blog .blog-bg {
+        background-size: cover !important;
+        background-position: center !important;
+        width: 100%;
+        height: 250px;          /* uniform height */
+        border-radius: 10px;
+      }
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My <a href="https://drive.google.com/file/d/10lC_EpSNj-RuLo2bD4_-gz7x2Xhmn7jm/view" target = "_blank">Resume</a></h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"> Linkedin Analyst Intern </h3>
-									<span class="company"> Lost in Jersey Podcast - Dec 2023 - Jan 2024</span>
-								</div>
-								<div class="timeline-body">
-									<p> Analyzed social media metrics, tracked key performance indicators (KPIs), and provided insightful reports to optimize content and outreach efforts.
-							            Collaborated with the podcast team to create compelling multimedia content, including graphics, videos, and interactive posts.
-										Provided recommendations that resulted in a 5% growth in LinkedIn engagement and a 10% increase in overall social media engagement.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"> Marketing Research Extern </h3>
-									<span class="company">AT&T - Oct 2023 - Dec 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p> Marketing Research Extern      October 2023-December 2023
-										Targeted Gen Z marketing campaigns via social media influencers and trends, resulting in a 10% increase in engagement.
-										Integrated AT&T's initiatives into the Dallas Cowboys Arena environment, leading to a 15% rise in brand visibility.
-										Utilized data analytics for campaign optimization, increasing campaign effectiveness by 20%.
-										Developed a presentation on KPI metrics and experiential marketing for Gen Z, achieving a 95% satisfaction rate from stakeholders. </p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"> Marketing DATA Analyst Extern </h3>
-									<span class="company"> Mobalytics Paragon One - Feb 2023 - April 2023 </span>
-								</div>
-								<div class="timeline-body">
-									<p> Conducted in-depth market research on cryptocurrency games, leading to the identification of 3 key market trends.
-										Analyzed player behavior, identified patterns, and recommended strategies that improved user engagement by 12%.
-										Explored cryptocurrency monetization features for Mobalytics' gaming platform, resulting in a 7% increase in revenue potential. </p>
-								</div>
-							</div>
-						</li>
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        h1, h2, h3 { font-size: 1.5rem; }
+        .profile-thumb { width: 140px; height: 140px; }
+        .navbar-nav > li > a { font-size: 14px; padding: 10px; }
+        .container { padding: 0 15px; }
+      }
+    </style>
+  </head>
+  <body>
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"> Bachelors Degree</h3>
-									<span class="company"> Baruch College, CUNY - Aug 2021 - May 2025 </span>
-								</div>
-								<div class="timeline-body">
-									<p> <b> Major: </b> Advertising & Marketing Communication </p>
-									<p> <b> Minor: </b> Psychology & Communication Studies </p>
-								</div>
-							</div>
-						</li>
+    <!-- ===== NAVIGATION (Bootstrap 3) ===== -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#akif-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#page">Akif Rahman</a>
+        </div>
 
-						<!-- <li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelors Degree</h3>
-									<span class="company">University Name - 2002 - 2006</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li> -->
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="akif-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#page">Home</a></li>
+            <li><a href="#fh5co-about">About</a></li>
+            <li><a href="index2.html">Projects</a></li>
+            <li><a href="#fh5co-resume">Resume</a></li>
+            <li><a href="#fh5co-features">Skills</a></li>
+            <li><a href="#fh5co-blog">Leadership</a></li>
+            <li><a href="#fh5co-consult">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ===== /NAVIGATION ===== -->
 
-						<!-- <li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Diploma Course</h3>
-									<span class="company">College Name - 1999 - 2001</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li> -->
+    <div class="fh5co-loader"></div>
 
-						<!-- <li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Graduation</h3>
-									<span class="company">College Name - 1994 - 1998</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li> -->
+    <div id="page">
+      <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <div class="display-t js-fullheight">
+                <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                  <!-- Updated main profile photo -->
+                  <div class="profile-thumb" style="background: url(images/akif-main-photo.png);"></div>
+                  <h1><span>Akif Rahman</span></h1>
+                  <h3><span>Investment Associate|COOP-Careers Alum|Baruch College Alum </span></h3>
+                  <p>
+                    <ul class="fh5co-social-icons">
+                      <li><a href="#" aria-label="Google"><i class="icon-google2"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/akif-rahman14/" target="_blank" aria-label="LinkedIn"><i class="icon-linkedin2"></i></a></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+      <div id="fh5co-about" class="animate-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+              <h2>About <a>Me</a></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="info">
+                <li><span class="first-block">Full Name:</span><span class="second-block"> Akif Rahman </span></li>
+                <li><span class="first-block">Phone:</span><span class="second-block">+1 347-748-4299</span></li>
+                <li><span class="first-block">Email:</span><span class="second-block"> akifrahman14@gmail.com </span></li>
+                <li><span class="first-block">Address:</span><span class="second-block"> 92-10 97th Ave Ozone Park, NY 11416</span></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <h2>Hello There!</h2>
+              <p>I’m Akif Rahman! I recently graduated from Baruch College with a degree in Marketing, and I completed the COOP Careers Data Analytics Fellowship. During the program, I discovered a strong passion for analytics—especially while working on a project analyzing NYPD arrest data. Thanks for stopping by! Feel free to explore my work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<div id="fh5co-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Skills</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-html-five2"></i>
-							</span>
-							<div class="feature-copy">
-								<h3> Web Design </h3>
-								<p>I specialize in crafting visually compelling and highly functional websites. My web designs focus on delivering an intuitive and engaging user experience.</p>
-							</div>
-						</div>
-					</div>
+      <div id="fh5co-resume" class="fh5co-bg-color">
+        <div class="container">
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+              <h2>My <a href="https://drive.google.com/file/d/16O-l4orxadpJk6lZSY8LKdbMBaB3BM88/view?usp=sharing" target="_blank">Resume</a></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+              <ul class="timeline">
+                <li class="timeline-heading text-center animate-box">
+                  <div><h3>Work Experience</h3></div>
+                </li>
+                <li class="animate-box timeline-unverted">
+                  
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                    <!-- NEW MOST RECENT ROLE -->
+<li class="timeline-heading text-center animate-box">
+ 
+</li>
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-file-word"></i>
-							</span>
-							<div class="feature-copy">
-								<h3> Microsoft Office </h3>
-								<p> I am proficient in the Microsoft Office suite, providing comprehensive solutions for all documentation requirements. My expertise spans Word, Excel, PowerPoint, and other Office applications, ensuring efficiency and accuracy.</p>
-							</div>
-						</div>
+<!-- NEW MOST RECENT ROLE (LEFT) -->
+<li class="timeline-unverted animate-box">
+  <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h3 class="timeline-title">Investment Associate</h3>
+      <span class="company">WPP — NOV 2025 – Present</span>
+    </div>
+    <div class="timeline-body">
+      
+    </div>
+  </div>
+</li>
 
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-search"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Analytics</h3>
-								<p> I offer expert data analysis services to identify key trends and actionable insights. My analytical proficiency supports data-driven decision-making for business growth. </p>
-							</div>
-						</div>
-					</div>
-				</div>
+<!-- Marketing Intern (RIGHT) -->
+<li class="timeline-inverted animate-box">
+  <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h3 class="timeline-title">Marketing Intern</h3>
+      <span class="company">Blackstone Launchpad (AI Ager) — OCT 2024 – JAN 2025</span>
+    </div>
+    <div class="timeline-body">
+      <p>Designed and structured website layout focusing on user-friendly navigation, mobile responsiveness, and SEO improvements. Used SEMrush and Google Keyword Planner to optimize metadata and content strategy. Managed Excel workflows for efficient project tracking.</p>
+    </div>
+  </div>
+</li>
+
+<!-- Social Media Intern (LEFT) -->
+<li class="timeline-unverted animate-box">
+  <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h3 class="timeline-title">Social Media Intern</h3>
+      <span class="company">Lost In Jersey (Podcast) — DEC 2023 – JAN 2024</span>
+    </div>
+    <div class="timeline-body">
+      <p>Analyzed LinkedIn performance using KPI metrics & CTR trends to enhance visibility. Presented social media performance reports and competitor analysis. Researched guest speakers and optimized posting schedules to maximize reach.</p>
+    </div>
+  </div>
+</li>
+
+<!-- AT&T Extern (RIGHT) -->
+<li class="timeline-inverted animate-box">
+  <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h3 class="timeline-title">Marketing Research Extern</h3>
+      <span class="company">AT&amp;T — OCT 2023 – DEC 2023</span>
+    </div>
+    <div class="timeline-body">
+      <p>Conducted market research and behavioral analysis to inform campaign strategy. Developed marketing concepts projected to increase live-event engagement by 20%. Collaborated in a structured externship team to produce final deliverables.</p>
+    </div>
+  </div>
+</li>
 
 
-				<div class="row">
-					<div class="col-md-4 text-center">
+                <br>
+                <li class="timeline-heading text-center animate-box">
+                  <div><h3>Education</h3></div>
+                </li>
 
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-bargraph"></i>
-							</span>
-							<div class="feature-copy">
-								<h3> Tableau </h3>
-								<p> I create dynamic and insightful Tableau dashboards that transform raw data into strategic assets. My Tableau visualizations enable clear and impactful data storytelling. </p>
-							</div>
-						</div>
+                              <!-- NEW: COOP Fellowship (added similar to Baruch) -->
+                <li class="animate-box timeline-unverted">
+                  <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">COOP Fellowship — Data Analytics Fellowship</h3>
+                      <span class="company">AUG 2025 – DEC 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p><b></b> Engaged in a 16-week fellowship program, acquiring expertise in data cleaning, transformation, analysis, and visualization using SQL, Python, and Tableau, alongside continuous professional development.</p>
+                      <p>200 hours of instruction time with a hands-on mastery of data tools, communication training, networking, and client work with actual companies.</p>
+                    </div>
+                  </div>
+                </li>
 
-					</div>
+                <!-- Baruch (existing) -->
+                <li class="timeline-inverted animate-box">
+                  <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Bachelors Degree</h3>
+                      <span class="company">Baruch College, CUNY — AUG 2021 – JAN 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p><b>Major:</b> Marketing Management</p>
+                      <p><b>Minor:</b> Psychology &amp; Communication Studies</p>
+                    </div>
+                  </div>
+                </li>
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-bucket"></i>
-							</span>
-							<div class="feature-copy">
-								<h3> Photoshop </h3>
-								<p> I am adept in Adobe Photoshop, delivering professional-grade image editing and graphic design. My skills in Photoshop enhance visual content to meet the highest standards of quality. </p>
-							</div>
-						</div>
+            
 
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-chat"></i>
-							</span>
-							<div class="feature-copy">
-								<h3> Fluent in Bengali </h3>
-								<p> With fluency in Bengali, I provide accurate and culturally nuanced communication and translation services. I offer comprehensive support for Bengali language projects, ensuring precise and effective outcomes. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<!-- <div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-				</div>
+      <div id="fh5co-features" class="animate-box">
+        <div class="container">
+          <div class="services-padding">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>My Skills</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-html-five2"></i></span>
+                  <div class="feature-copy">
+                    <h3>Web Design</h3>
+                    <p>I specialize in crafting visually compelling and highly functional websites. My web designs focus on delivering an intuitive and engaging user experience.</p>
+                  </div>
+                </div>
+              </div>
 
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Ruby</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Java</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Design</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-file-word"></i></span>
+                  <div class="feature-copy">
+                    <h3>Microsoft Office</h3>
+                    <p>I am proficient in the Microsoft Office suite, providing comprehensive solutions for documentation. Expertise in Word, Excel, PowerPoint for efficiency and accuracy.</p>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-search"></i></span>
+                  <div class="feature-copy">
+                    <h3>Analytics</h3>
+                    <p>I offer data analysis to identify key trends and actionable insights, supporting data-driven decision-making for growth.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	<!-- WORK, UNCOMMENT IF NEEDED -->
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-bargraph"></i></span>
+                  <div class="feature-copy">
+                    <h3>Tableau</h3>
+                    <p>I build dynamic, insightful dashboards that transform raw data into strategic assets and clear, impactful stories.</p>
+                  </div>
+                </div>
+              </div>
 
-	<!-- <div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-4.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Design</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Website</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div> -->
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-bucket"></i></span>
+                  <div class="feature-copy">
+                    <h3>Photoshop</h3>
+                    <p>Professional-grade image editing and graphic design to enhance visual content and brand quality.</p>
+                  </div>
+                </div>
+              </div>
 
-	<!-- WORK, UNCOMMENT IF NEEDED -->
+              <div class="col-md-4 text-center">
+                <div class="feature-left">
+                  <span class="icon"><i class="icon-chat"></i></span>
+                  <div class="feature-copy">
+                    <h3>Fluent in Bengali</h3>
+                    <p>Accurate, culturally nuanced communication and translation for Bengali language projects.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2> Leadership Experience </h2>
-					<p> My experience with AMA as Analytics Director Spring 2024 </p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" id = "cuny_office" style="background-image: url(images/CUNY\ Office\ Visit.png);"></a>
-						<div class="blog-text">
-							<!-- <span class="posted_on">Mar. 15th 2016</span> -->
-							<h3><a href="#"> CUNY Office Visit </a></h3>
-							<p> CUNY office visit where I was with my fellow AMA members.
-								<br>
-								<br>
-								<b>-</b> Learned about the creative ideas CUNY has in store for us
-								Was open to suggestions on our thoughts and ideas for the creative team
-								<br>
-								<b>-</b> Asked us opinions and suggestions on the upcoming designs for future students 
-								<br>
-								<b>-</b> Had an office visit of the complete CUNY building</p>
-							<ul class="stuff">
-								<!-- <li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li> -->
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/The\ AMAzing\ Podcast.png);"></a>
-						<div class="blog-text">
-							<!-- <span class="posted_on">Mar. 15th 2016</span> -->
-							<h3><a href="#"> The AMAzing Podcast </a></h3>
-							<p> <b>-</b> We decided to create our first episode of the AMA podcast where we had our host and cohost interview 
-								the clubs president, vice president, social media and Analytics director
-								<br>
-								<b>-</b> Talked about future plans within the podcast
-								<br>
-								<b>-</b> Our sponsorship with Insomnia cookies 
-								<br>
-								<b>-</b> Our roles within the podcast</p>
-							<ul class="stuff">
-								<!-- <li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li> -->
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/AMA\ logo.png);"></a>
-						<div class="blog-text">
-							<!-- <span class="posted_on">Mar. 15th 2016</span> -->
-							<h3><a href="#"> National AMA Case Study </a></h3>
-							<p> <b>-</b> Worked on a case study competition on sustainability with Baruch AMA sponsored by the National American Marketing Association 
-								<br>
-								<b>-</b> My role was to focus on the KPI metrics as well as help designing an app to promote sustainability 
-								<br>
-								<b>-</b> Had meetings with the team weekly in person and remotely to complete the case study with efficiency </p>
-							<ul class="stuff">
-								<!-- <li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li> -->
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- <div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-					<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
-				</div>
-			</div>
-		</div>
-	</div> -->
+          </div>
+        </div>
+      </div>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/contact.png);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
+      <!-- ===== UPDATED LEADERSHIP SECTION ===== -->
+      <div id="fh5co-blog">
+        <div class="container">
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+              <h2>Leadership Experience</h2>
+              <p>My experience with AMA as Analytics Director Spring 2024</p>
+            </div>
+          </div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
+          <div class="row">
+            <!-- CUNY Office Visit -->
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <a href="#" class="blog-bg" style="background-image: url(images/cuny-office-visit.png);" aria-label="CUNY Office Visit"></a>
+                <div class="blog-text">
+                  <h3><a href="#">CUNY Office Visit</a></h3>
+                  <p>
+                    <b>-</b> Visited CUNY headquarters with AMA team members <br>
+                    <b>-</b> Engaged in discussions about creative ideas and upcoming designs <br>
+                    <b>-</b> Took a guided tour of the CUNY facilities
+                  </p>
+                  <ul class="stuff">
+                    <li><a href="#">Read More <i class="icon-arrow-right22"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
+            <!-- The AMAzing Podcast -->
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <a href="#" class="blog-bg" style="background-image: url(images/amazing-podcast.png);" aria-label="The AMAzing Podcast"></a>
+                <div class="blog-text">
+                  <h3><a href="#">The AMAzing Podcast</a></h3>
+                  <p>
+                    <b>-</b> Produced the first AMAzing Podcast episode <br>
+                    <b>-</b> Conducted interviews with leadership and discussed future plans <br>
+                    <b>-</b> Secured sponsorship from Insomnia Cookies
+                  </p>
+                  <ul class="stuff">
+                    <li><a href="#">Read More <i class="icon-arrow-right22"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
+            <!-- National AMA Case Study -->
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <a href="#" class="blog-bg" style="background-image: url(images/national-ama-case.png);" aria-label="National AMA Case Study"></a>
+                <div class="blog-text">
+                  <h3><a href="#">National AMA Case Study</a></h3>
+                  <p>
+                    <b>-</b> Participated in a sustainability-focused case competition <br>
+                    <b>-</b> Led KPI metric analysis and contributed to an app concept design <br>
+                    <b>-</b> Collaborated with teammates through weekly meetings to deliver on time
+                  </p>
+                  <ul class="stuff">
+                    <li><a href="#">Read More <i class="icon-arrow-right22"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-			</form>	
-		</div>
-	</div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== /LEADERSHIP ===== -->
 
-	<!-- <div id="map" class="fh5co-map"></div>
-	</div> -->
-	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2024 Akif Rahman. All Rights Reserved. </p>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div id="fh5co-consult">
+        <div class="video fh5co-video" style="background-image: url(images/contact.png);">
+          <div class="overlay"></div>
+        </div>
+        <div class="choose animate-box">
+          <h2>Contact</h2>
+          <!-- Optional: use Formspree or EmailJS to make this functional -->
+          <form action="#" method="POST">
+            <div class="row form-group">
+              <div class="col-md-6">
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Your firstname" required>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-6">
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Your lastname" required>
+              </div>
+            </div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required>
+              </div>
+            </div>
 
-	</body>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message" required>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" required></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="fh5co-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2024 Akif Rahman. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gototop js-top">
+        <a href="#" class="js-gotop" aria-label="Back to top"><i class="icon-arrow-up22"></i></a>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js" defer></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js" defer></script>
+    <!-- Bootstrap (v3) -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js" defer></script>
+    <!-- Stellar Parallax -->
+    <script src="js/jquery.stellar.min.js" defer></script>
+    <!-- Easy PieChart -->
+    <script src="js/jquery.easypiechart.min.js" defer></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false" defer></script>
+    <script src="js/google_map.js" defer></script>
+    <!-- Main -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Navbar scroll behavior + active link highlight -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var $win = $(window);
+        var $nav = $('.navbar-custom');
+        var $links = $('.navbar-nav li a');
+
+        // Color change on scroll
+        function onScroll() {
+          if ($win.scrollTop() > 50) {
+            $nav.addClass('scrolled');
+          } else {
+            $nav.removeClass('scrolled');
+          }
+        }
+        onScroll();
+        $win.on('scroll', onScroll);
+
+        // Highlight active link as you scroll
+        var sections = $links.map(function() {
+          var href = $(this).attr('href');
+          if (href && href.startsWith('#')) return $(href);
+        });
+
+        function setActive() {
+          var pos = $win.scrollTop() + 80; // offset for fixed navbar
+          var current;
+          sections.each(function() {
+            var $sec = $(this);
+            if ($sec && $sec.offset() && $sec.offset().top <= pos) {
+              current = $sec;
+            }
+          });
+          $links.parent().removeClass('active');
+          if (current && current.length) {
+            var id = current.attr('id');
+            $links.filter('[href="#' + id + '"]').parent().addClass('active');
+          }
+        }
+        setActive();
+        $win.on('scroll', setActive);
+
+        // Close mobile menu after click
+        $('.navbar-collapse a').on('click', function(){
+          if ($('.navbar-toggle').is(':visible')) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

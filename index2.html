@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects | Akif Rahman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects Portfolio" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom styles -->
+    <style>
+        /* Make every carousel image the same size and nicely cropped */
+        .carousel-inner > .item > img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .project-divider {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+
+        /* Ensure carousels are positioning context for overlay controls */
+        .carousel { position: relative; }
+
+        /* Center-left / center-right arrow-head controls */
+        .carousel-corner-controls{
+            position:absolute;
+            top:50%;
+            left:0;
+            right:0;
+            transform:translateY(-50%);
+            z-index:30;              /* above images/indicators */
+            pointer-events:none;     /* let clicks pass through EXCEPT buttons */
+        }
+        .carousel-corner-controls .btn{
+            pointer-events:auto;     /* re-enable on the buttons themselves */
+            background: rgba(0,0,0,0.45);
+            color:#fff;
+            border:1px solid rgba(255,255,255,0.75);
+            border-radius:50%;
+            width:48px;
+            height:48px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:32px;
+            font-weight:800;
+            line-height:1;
+            cursor:pointer;
+            text-shadow:none;
+            -webkit-text-stroke: 1px rgba(0,0,0,0.4);
+            transition:transform .15s ease, background .15s ease;
+        }
+        .carousel-corner-controls .btn:hover,
+        .carousel-corner-controls .btn:focus{
+            background: rgba(0,0,0,0.65);
+            transform: scale(1.12);
+            outline:none;
+        }
+        .carousel-corner-controls .btn-prev{ position:absolute; left:18px; }
+        .carousel-corner-controls .btn-next{ position:absolute; right:18px; }
+
+        /* Hide Bootstrap’s default left/right controls */
+        .carousel-control.left,
+        .carousel-control.right {
+            display: none !important;
+        }
+
+        /* Keep indicators tappable above images if present */
+        .carousel-indicators {
+            z-index: 25;
+        }
+    </style>
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/projects_bg.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t js-fullheight">
+                        <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                            <h1><span>My Projects</span></h1>
+                            <p><a href="index.html" class="btn btn-primary">Back to Home</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="fh5co-projects" class="animate-box">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <br>
+                    <h2>Featured Projects</h2>
+                    <p>Explore some of the projects I've worked on. Each project reflects my marketing journey! </p>
+                </div>
+            </div>
+
+            <!-- PROJECT 1: NYPD -->
+            <div class="col-md-12 project-divider">
+                <h3 id="proj1"> Project 1: NYPD Arrests 2021 &#10511; 
+                    <a href="https://coopcareers-my.sharepoint.com/:p:/g/personal/akif_rahmanfl25_coopcareers_org/EXxBrff3oLlDhl-cJCaTQ04BXxCVknWR5-JCOa8d0SUNTA?e=hvfiod.p" target="_blank"> Learn More </a>
+                </h3>
+                <p> My team and I analyzed 155,000+ NYPD arrest records (2021) using Python (pandas), Excel, and Tableau to clean, transform, and visualize key crime trends. The data revealed borough concentrations, seasonal spikes, demographic disparities, gender gaps in arrests and insights that informed actionable recommendations for public safety.</p>
+
+                <div id="project-carousel-1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel-1" data-slide-to="1"></li>
+                        <li data-target="#project-carousel-1" data-slide-to="2"></li>
+                        <li data-target="#project-carousel-1" data-slide-to="3"></li>
+                        <li data-target="#project-carousel-1" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="images/project1/NYPD1.png" alt="NYPD Slide 1"></div>
+                        <div class="item"><img src="images/project1/NYPD2.png" alt="NYPD Slide 2"></div>
+                        <div class="item"><img src="images/project1/NYPD3.png" alt="NYPD Slide 3"></div>
+                        <div class="item"><img src="images/project1/NYPD5.png" alt="NYPD Slide 4"></div>
+                        <div class="item"><img src="images/project1/NYPD10.png" alt="NYPD Slide 5"></div>
+                    </div>
+
+                    <!-- Center overlay ARROW HEADS -->
+                    <div class="carousel-corner-controls">
+                        <button class="btn btn-prev" data-target="#project-carousel-1" data-slide="prev" aria-label="Previous slide">‹</button>
+                        <button class="btn btn-next" data-target="#project-carousel-1" data-slide="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: Spotify -->
+            <div class="col-md-12 project-divider">
+                <h3 id="proj2"> Project 2: Spotify &#10511; 
+                    <a href="https://docs.google.com/presentation/d/1z2voH1Qxn2UKZvwD4l1pYwulP72T53YWv2BrS_T_T_w/edit#slide=id.p" target="_blank"> Learn More </a>
+                </h3>
+                <p> Worked with my peers on a group assignment on Spotify. Our objective was to see how much users are on Spotify by sending out surveys and interviewing some of the people on their thoughts on Spotify premium if they will purchase it or just continue with the free plan. The respondents gave suggestions on how Spotify can improve and what features it excels at.</p>
+
+                <div id="project-carousel-2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel-2" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel-2" data-slide-to="1"></li>
+                        <li data-target="#project-carousel-2" data-slide-to="2"></li>
+                        <li data-target="#project-carousel-2" data-slide-to="3"></li>
+                        <li data-target="#project-carousel-2" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="images/project_spotify/spotify1.png" alt="Spotify Slide 1"></div>
+                        <div class="item"><img src="images/project_spotify/spotify2.png" alt="Spotify Slide 2"></div>
+                        <div class="item"><img src="images/project_spotify/spotify3.png" alt="Spotify Slide 3"></div>
+                        <div class="item"><img src="images/project_spotify/spotify4.png" alt="Spotify Slide 4"></div>
+                        <div class="item"><img src="images/project_spotify/spotify5.png" alt="Spotify Slide 5"></div>
+                    </div>
+
+                    <!-- Center overlay ARROW HEADS -->
+                    <div class="carousel-corner-controls">
+                        <button class="btn btn-prev" data-target="#project-carousel-2" data-slide="prev" aria-label="Previous slide">‹</button>
+                        <button class="btn btn-next" data-target="#project-carousel-2" data-slide="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: AT&T -->
+            <div class="col-md-12 project-divider">
+                <h3 id="proj3"> Project 3: AT&amp;T &#10511; 
+                    <a href="https://www.canva.com/design/DAF1MMSFrTo/hupiWR7QvZZ2YFVoQ6MjnA/edit" target="_blank"> Learn More </a>
+                </h3>
+                <p> For this project I was working with AT&amp;T (Paragon One) and the purpose of this assignment was to see how AT&amp;T can target Gen Z consumers. This project shows the suggestions I implemented with KPI metrics. I conducted case studies with other stadiums and see what they did to match AT&amp;T stadium. </p>
+
+                <div id="project-carousel-3" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel-3" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel-3" data-slide-to="1"></li>
+                        <li data-target="#project-carousel-3" data-slide-to="2"></li>
+                        <li data-target="#project-carousel-3" data-slide-to="3"></li>
+                        <li data-target="#project-carousel-3" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="images/project2/AT&T 1.png" alt="AT&amp;T Slide 1"></div>
+                        <div class="item"><img src="images/project2/AT&T 3.png" alt="AT&amp;T Slide 2"></div>
+                        <div class="item"><img src="images/project2/AT&T 4.png" alt="AT&amp;T Slide 3"></div>
+                        <div class="item"><img src="images/project2/AT&T 5.png" alt="AT&amp;T Slide 4"></div>
+                        <div class="item"><img src="images/project2/AT&T 8.png" alt="AT&amp;T Slide 5"></div>
+                    </div>
+
+                    <!-- Center overlay ARROW HEADS -->
+                    <div class="carousel-corner-controls">
+                        <button class="btn btn-prev" data-target="#project-carousel-3" data-slide="prev" aria-label="Previous slide">‹</button>
+                        <button class="btn btn-next" data-target="#project-carousel-3" data-slide="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: AXE -->
+            <div class="col-md-12 project-divider">
+                <h3 id="proj4"> Project 4: AXE &#10511; 
+                    <a href="https://drive.google.com/file/d/1EWSd6hvOq_-hd8DuyOpzXc-xMz_E1g7G/view?usp=sharing" target="_blank"> Learn More </a>
+                </h3>
+                <p> For our last assignment, I worked to rebrand AXE and make it more appealing to a broader audience. AXE is more appealing to teenage boys, and my goal was to broaden that demographic to include college students and young professionals as well. AXE is notorious for its terrible odor. I proposed concepts and a rebranding strategy to make AXE's reputation disappear. </p>
+
+                <div id="project-carousel-4" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel-4" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel-4" data-slide-to="1"></li>
+                        <li data-target="#project-carousel-4" data-slide-to="2"></li>
+                        <li data-target="#project-carousel-4" data-slide-to="3"></li>
+                        <li data-target="#project-carousel-4" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="images/project3/AXE1.png" alt="AXE Slide 1"></div>
+                        <div class="item"><img src="images/project3/AXE2.png" alt="AXE Slide 2"></div>
+                        <div class="item"><img src="images/project3/AXE3.png" alt="AXE Slide 3"></div>
+                        <div class="item"><img src="images/project3/AXE4.png" alt="AXE Slide 4"></div>
+                        <div class="item"><img src="images/project3/AXE5.png" alt="AXE Slide 5"></div>
+                    </div>
+
+                    <!-- Center overlay ARROW HEADS -->
+                    <div class="carousel-corner-controls">
+                        <button class="btn btn-prev" data-target="#project-carousel-4" data-slide="prev" aria-label="Previous slide">‹</button>
+                        <button class="btn btn-next" data-target="#project-carousel-4" data-slide="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: ART FINAL PORTFOLIO -->
+            <div class="col-md-12 project-divider">
+                <h3 id="proj5"> Project 5: Art Final Portfolio &#10511; 
+                    <a href="https://drive.google.com/file/d/1Or3H_x1wvNiLvf5AuZxS_SksjCChh-O5/view?usp=sharing" target="_blank"> Learn More </a>
+                </h3>
+                <p> Created designs for my final art class project using Adobe Photoshop, Illustrator, and InDesign, drawing inspiration from the Bauhaus movement's distinctive use of shapes and colors for the cover page. </p>
+
+                <div id="project-carousel-5" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel-5" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel-5" data-slide-to="1"></li>
+                        <li data-target="#project-carousel-5" data-slide-to="2"></li>
+                        <li data-target="#project-carousel-5" data-slide-to="3"></li>
+                        <li data-target="#project-carousel-5" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="images/project4/art1.png" alt="Art Slide 1"></div>
+                        <div class="item"><img src="images/project4/art2.png" alt="Art Slide 2"></div>
+                        <div class="item"><img src="images/project4/art3.png" alt="Art Slide 3"></div>
+                        <div class="item"><img src="images/project4/art4.png" alt="Art Slide 4"></div>
+                        <div class="item"><img src="images/project4/art5.png" alt="Art Slide 5"></div>
+                    </div>
+
+                    <!-- Center overlay ARROW HEADS -->
+                    <div class="carousel-corner-controls">
+                        <button class="btn btn-prev" data-target="#project-carousel-5" data-slide="prev" aria-label="Previous slide">‹</button>
+                        <button class="btn btn-next" data-target="#project-carousel-5" data-slide="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fh5co-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Akif Rahman. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
